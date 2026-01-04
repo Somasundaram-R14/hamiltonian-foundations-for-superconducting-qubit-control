@@ -4,9 +4,9 @@ This repository presents a Hamiltonian-level study of the cross-resonance (CR)
 gate, focusing on the microscopic origin and numerical verification of the
 effective conditional ZX interaction.
 
-The goal of this work is to go beyond phenomenological gate models and provide a
-clear derivation starting from a microscopic cavity-QED Hamiltonian, followed by
-numerical validation of the resulting effective dynamics.
+This work represents one component of a broader program aimed at understanding
+entangling gates and noise processes directly from microscopic Hamiltonians,
+rather than phenomenological gate models.
 
 ---
 
@@ -32,52 +32,70 @@ oscillations and Bell-state generation confirmed via von Neumann entropy.
 
 ### derivations/
 
-Contains the full analytical derivation in PDF form, starting from the
-microscopic Hamiltonian and leading to the effective ZX interaction.
+Contains analytical derivations in PDF form, starting from the microscopic
+Hamiltonian and leading to effective interactions relevant for the
+cross-resonance gate.
 
 ### notebooks/
 
-Contains Jupyter notebooks that numerically verify the effective Hamiltonian and
-demonstrate conditional dynamics and entanglement generation.
+Contains Jupyter notebooks providing numerical verification and physical
+interpretation of the effective Hamiltonians derived in this work.
 
 ---
 
-## Frames and Scope
+## Frames, Approximations, and Scope
 
-The analytical derivation makes extensive use of rotating frames, dressed-state
-transformations, and interaction-picture arguments to isolate the slow dynamics
-responsible for the CR gate.
+The analytical derivations make extensive use of rotating frames,
+dressed-state transformations, and interaction-picture arguments in order to
+isolate the slow dynamics responsible for conditional entangling interactions.
 
-The numerical simulations are performed in the interaction picture associated
-with the dressed control-qubit Hamiltonian. Single-qubit control pulses are
-treated as separate Hamiltonian terms when required.
+The numerical simulations included here are performed in effective interaction
+pictures appropriate for identifying the emergent ZX coupling. Single-qubit
+control pulses are treated as separate Hamiltonian terms when required.
 
-Extension to full lab-frame simulations, pulse-level modeling, and noise effects
-is left for future work.
+At this stage, the focus is on coherent Hamiltonian dynamics. Dissipative and
+dephasing effects are not yet included.
+
+---
+
+## Relation to Future Work
+
+This repository addresses the coherent Hamiltonian origin of the cross-resonance
+ZX interaction. It is intended to serve as a foundation for future extensions,
+including:
+
+- Hamiltonian-level modeling of noise sources (e.g., dephasing and relaxation),
+- dressing and renormalization of noise operators under dispersive and driven
+  transformations,
+- sensitivity of effective gate terms to microscopic noise processes,
+- echoed and optimized CR gate constructions.
+
+These extensions will be added incrementally as part of a larger effort to
+connect microscopic Hamiltonians, effective gates, and noise-aware design.
 
 ---
 
 ## Status and Intent
 
 This repository is intended as a physics-first, transparent account of how the
-cross-resonance ZX interaction arises and how it can be identified and validated
-numerically.
+cross-resonance ZX interaction emerges from a driven dispersive system and how it
+can be identified and validated numerically.
 
 It is suitable as:
 - a reference for Hamiltonian-level understanding of CR gates,
-- a companion to theoretical studies of driven entangling interactions,
-- a starting point for further extensions.
+- a foundation for noise-aware gate analysis,
+- a starting point for further theoretical and numerical extensions.
 
 ---
 
 ## Requirements
 
-The numerical notebook relies on standard scientific Python tools, including:
+The numerical notebooks rely on standard scientific Python tools, including:
 - numpy
 - qutip
 - matplotlib
 
-Exact versions are not pinned.
+Exact versions are not pinned at this stage.
 
 ---
 
