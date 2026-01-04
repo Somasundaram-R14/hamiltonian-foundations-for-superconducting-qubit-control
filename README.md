@@ -21,7 +21,7 @@ By introducing a resonant drive on one qubit, moving to an appropriate rotating
 frame, and performing a dressed-state transformation followed by a secular
 approximation, we show that an effective conditional interaction emerges:
 
-$H_ZX = J_ZX σ_z1 σ_x2$
+$H_{ZX} = J_{ZX} σ_{z1} σ_{x2}$
 
 This effective Hamiltonian is verified numerically through conditional Rabi
 oscillations and Bell-state generation confirmed via von Neumann entropy.
